@@ -8,7 +8,7 @@ venv
 
 ./app:
 __init__.py
-api
+__pycache__
 controllers
 core
 main.py
@@ -16,19 +16,14 @@ models
 routers
 services
 
-./app/api:
-__init__.py
-v1
-
-./app/api/v1:
-__init__.py
-data.py
-video.py
+./app/__pycache__:
+__init__.cpython-312.pyc
+main.cpython-312.pyc
 
 ./app/controllers:
 __init__.py
-data_controller.py
-video_controller.py
+highlights_controller.py
+qna_controller.py
 
 ./app/core:
 __init__.py
@@ -38,37 +33,37 @@ security.py
 
 ./app/models:
 __init__.py
-data.py
-video.py
+highlights.py
+qna.py
 
 ./app/routers:
 __init__.py
-data_router.py
-video_router.py
+highlights_router.py
+qna_router.py
 
 ./app/services:
 __init__.py
-data_services.py
-video_service.py
+highlights_service.py
+qna_service.py
 
 ./db:
 metadata
-processed
+preprocessed
 raw
 
 ./db/metadata:
 
-./db/processed:
+./db/preprocessed:
 
 ./db/raw:
 
 ./scripts:
-__init_db.py
+init_db.py
 
 ./tests:
 __init__.py
-test_data.py
-test_video.py
+test_highlights.py
+test_qna.py
 
 ./venv:
 bin
